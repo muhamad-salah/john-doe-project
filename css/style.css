@@ -1,0 +1,457 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000; /* ***************************body*********************************/
+
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+main {
+  display: flex;
+}
+
+.main-navbar {
+  height: 100vh;
+  width: 10%;
+  
+  position: fixed;
+  margin-right: 20px;
+}
+
+.main-navbar ul {
+  list-style: none;
+  background-color: #222222;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.main-navbar ul li {
+  /* padding-top: 50px; */
+  background-color: #222222;
+
+  padding: 20px;
+}
+.main-navbar ul li:first-of-type{
+  cursor: default;
+
+}
+.main-navbar ul li:hover:first-of-type{
+  background-color: #222222;
+}
+
+
+
+.main-navbar ul li i {
+  color: #fff;
+  font-size: 30px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.main-navbar ul li :not(1) {
+  cursor: pointer;
+}
+
+.main-navbar ul li img {
+  width: 100%;
+  height: 120px;
+  opacity: 0.2;
+
+}
+
+.main-navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.main-navbar ul li:nth-child(1) {
+  padding: 0;
+  height: 120px;
+}
+
+.main-navbar ul li:nth-child(2) {
+  background-color: #000;
+}
+
+.main-navbar ul li:nth-child(2):hover {
+  background-color: #ccc;
+}
+.main-navbar ul li:hover{
+  background-color: #000;
+}
+
+.main-navbar ul li {
+    cursor: pointer;
+}
+
+
+
+/************************start main conent***************************/
+
+.main-content {
+  color: #fff;
+  width: 90%;
+  margin-left: 10%;
+}
+.maintitle {
+  text-align: center;
+}
+
+.main-content h1 {
+  margin: 55px 0;
+  font-size: 60px;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+.maintitle p{
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.profile-section {
+  width: 80%;
+  margin: auto;
+}
+.myname-section p {
+  text-align: justify;
+  color: grey;
+  opacity: 0.6;
+  font-weight: 300;
+  line-height: 25px;
+}
+.myname-section h2{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+hr {
+  opacity: 0.6;
+  width: 200px;
+  margin: 20px 0;
+}
+.myskills-section {
+  margin-top: 40px;
+
+}
+.myskills-section h2{
+    font-weight: 300;
+}
+.myskills-section p {
+  margin-top: 30px;
+}
+.progress-bar {
+  height: 30px;
+  background-color: honeydew;
+  width: 100%;
+  margin-top: 20px;
+}
+.bar {
+  height: 30px;
+  background-color: grey;
+}
+
+.bar1 {
+  width: 90%;
+}
+.bar2 {
+  width: 80%;
+}
+.bar3 {
+  width: 70%;
+}
+.myskills-section p {
+  color: grey;
+  opacity: 0.8;
+  letter-spacing: 4px;
+}
+
+.projects {
+  background-color: #ccc;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  text-align: center;
+  padding: 50px 0;
+  max-height: 120px;
+  min-height: 120px;
+}
+.projects p,
+span {
+  color: #000;
+  margin: 0;
+}
+.profile-button {
+  margin-top: 40px;
+  padding: 15px 15px;
+  background-color: #ccc;
+  color: black;
+  width: 220px;
+  text-align: center;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.profile-button:hover {
+  background-color: gray;
+}
+
+.profile-button a {
+  text-decoration: none;
+  color: #000;
+  margin: 0 10px;
+  font-size: 13px;
+}
+.profile-section i {
+  font-size: 13px;
+}
+/**************************************price************************************/
+
+.price-collection {
+  text-align: center;
+}
+.price-section h4 {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 300;
+}
+.price-collection {
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+  font-weight: lighter;
+}
+
+.price-collection .price:hover {
+  opacity: 1;
+}
+.price-collection h5 {
+  background-color: #616161;
+  padding: 20px 0;
+  font-size: 25px;
+  color: #fff;
+}
+
+.price-collection p {
+  padding: 15px 0;
+}
+
+.price p:nth-of-type(5) {
+  padding: 35px 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+.price p:nth-of-type(6) {
+  padding: 25px 0;
+}
+.price p span {
+  display: block;
+  font-size: 15px;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 300;
+}
+.price {
+  background-color: #fff;
+  width: 49%;
+  opacity: 0.6;
+  transition: opacity 0.7s;
+  -webkit-transition: opacity 0.7s;
+  -moz-transition: opacity 0.7s;
+  -ms-transition: opacity 0.7s;
+  -o-transition: opacity 0.7s;
+}
+.price button {
+  padding: 15px;
+  color: #000;
+  background-color: bisque;
+  text-decoration: none;
+  border: none;
+  width: 100px;
+  cursor: pointer;
+  transition: background-color 1s;
+}
+
+.price button:hover {
+  background-color: black;
+  color: #fff;
+}
+.price-collection hr {
+  height: 1px;
+  background-color: #616161;
+  border: none;
+  width: 100%;
+  opacity: 0.3;
+  margin: 0;
+}
+
+.price-pro {
+  background-color: #ccc;
+  width: 49%;
+}
+
+.price-section {
+  margin: 40px 0;
+}
+/**********************************reputation************************/
+.my-reputation{
+    margin: 60px 0;
+    
+}
+
+
+.my-reputation h4{
+    font-size: 25px;
+    font-weight: 300;
+}
+
+
+.reputation-container{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+
+
+.reputation-img img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    
+}
+.reputation-content p{
+    margin: 0 25px ;
+    font-weight: 200;
+    color: silver;
+    opacity: 0.8;
+}
+
+
+/************************end main conent*****************************/
+
+
+/*************************photos*************************/
+.photos{
+    margin-top: 70px;
+}
+
+
+.photos h4{
+    font-size: 25px;
+    font-weight: 300;
+}
+.photo-container{
+    display: flex;
+    width: 100%;
+    
+    
+}
+.photo-collection{
+    width: 50%;
+
+}
+.photo-collection img{
+    
+width: 97%;
+}
+
+/*******************************contact***********************************/
+.contact h2{
+    
+    font-size: 25px;
+    font-weight: 400;
+    
+}
+.contact p{
+    margin-top: 40px;
+    font-size: 15px;
+    font-weight: 200;
+    opacity: 0.6;
+
+}
+
+.contact i{
+    margin-right: 20px;
+    font-size: 30px;
+    opacity: 1;
+    color:#fff;
+    
+}
+/*************************************getintouch***********************************/
+
+.getintouch{
+    margin-top: 50px;
+}
+.getintouch p{
+    font-weight: 200;
+}
+
+.getintouch button{
+    margin-top: 20px;
+    background-color: #fff;
+    width: 200px;
+    height: 50px;
+    padding: 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+.getintouch button:hover{
+    background-color: #ccc;
+}
+.getintouch button i{margin-right: 4px;}
+
+
+.getintouch form input{
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    height: 50px;
+
+}
+
+.getintouch form input:placeholder-shown{
+    font-size: 17px;
+}
+
+
+.footer{
+    margin-top: 70px;
+    
+}
+
+.footer i{
+    font-size: 20px;
+    margin-right: 5px;
+    color: silver;
+    opacity: 0.5;
+}
+.footer i:hover{
+    color:grey;
+}
+
+
+.footer p{
+    padding: 25px  0;
+    font-weight: 200;
+    color: silver;
+    opacity: 0.5;
+}
+
+.footer p a{
+    color: silver;
+}
+
+
+.footer p a:hover{
+    color: springgreen;
+}
